@@ -1,0 +1,51 @@
+.root {
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* 左边容器，话单名称 */
+
+.leftContainer {
+    width: 250px;
+    height: 100%;
+    background-color: aqua;
+    position: relative;
+}
+
+/* 中间容器，表格 */
+
+.middleContainer {
+    /* display: flex;
+    display: -webkit-flex; */
+    /* flex: 0; */
+    width: 0px;
+    height: 100%;
+    overflow: hidden;
+    background-color: lightblue;
+    position: relative;
+    border-right:2px solid black;
+}
+
+/* 右边容器，地图 */
+
+.rightContainer {
+    flex: 1;
+    height: 100%;
+    background-color: lightcoral;
+    position: relative;
+    overflow: hidden;
+}
+
+.toggleLeft {
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    position: absolute;
+    cursor: pointer;
+    background-size: cover;
+    left: 5px;
+    background-image: url('../assets/open.png');
+}
